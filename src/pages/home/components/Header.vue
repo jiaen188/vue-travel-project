@@ -21,12 +21,14 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+  @import '~styles/varibles.styl';
+
   // 1rem = html font-size = 50px;
   .header
     display: flex
     line-height: 0.86rem
     height: .86rem
-    background: #00bcd4
+    background: $bgColor
     color: #fff
     .header-left
       width: .64rem
