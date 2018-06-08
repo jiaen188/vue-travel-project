@@ -20,10 +20,10 @@ export default {
       },
       swiperList: [{
         id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1805/e5/59fad13a64807d02.jpg_750x200_713ae984.jpg'
+        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1801/1a/94428c6dea109402.jpg_640x200_2cf590d8.jpg'
       }, {
         id: '002',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1805/3b/ef86879aa50e3002.jpg_750x200_2a108508.jpg'
+        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1802/42/7c92b9a381e46402.jpg_640x200_1cdce2a4.jpg'
       }]
     }
   }
@@ -38,7 +38,7 @@ export default {
     overflow hidden
     width 100%
     height 0 /* 不能设置height是31.25%，因为是相对父级的百分比 */
-    padding-bottom 26.67%
+    padding-bottom 31.25%
     /* .swiper-pagination-bullet-active
       background-color red !important */ /* 不会起作用 */
     background-color #eee
