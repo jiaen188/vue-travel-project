@@ -13,7 +13,10 @@
         class="search-item border-bottom"
         v-for="item of list"
         :key="item.id"
-      >{{item.name}}</li>
+        @click="handleCityClick(item.name)"
+      >
+        {{item.name}}
+      </li>
       <li v-show="hasNoData" class="search-item border-bottom">
         没有找到匹配数据
       </li>
@@ -62,6 +65,12 @@ export default {
         }
         this.list = result
       }, 100)
+    }
+  },
+  methods: {
+    handleCityClick (city) {
+      this.$store.commit('changeCity', city)
+      this.$router.push('/')
     }
   },
   mounted () {
