@@ -1,6 +1,90 @@
 # where-to-travel
 
-> A Vue.js project
+> 一个关于练习vue的demo
+
+&nbsp;&nbsp;覆盖大部分vue基础知识点,除了使用better-scoll实现接近原生的滚动效果，vue-awesome-swiper实现轮播效果，其他全部使用stylus自定义组件
+ps：目前由于使用本地接口，需要访问8080端口,如果想要修改，请在/config/index.js中修改proxyTable
+
+## 技术栈
+
+>	vue + vue-router + vuex + axios
+
+## 目录结构
+
+```
+
+|——build                                                //构建
+|——config                                               //配置
+
+|——node_modules                                         //npm项目依赖
+
+|——src
+	  |——assets——
+|			  |——styles                                       //样式
+	|
+|
+    |——common——                                         //基础组件
+|			  |——fade                                         //渐变动画组件
+	|
+|			  |——gallary                                      //画廊组件
+	|
+|
+    |——base——                                           //业务页面
+|			  |——city
+  |         |——city.vue                                 //城市页面
+|
+  |         |——components
+|               |
+  |             |——Alphabet.vue                         //字母导航栏组件
+|               |——Header.vue                           //Header组件
+	|             |——List.vue                             //城市列表组件
+|               |——Search.vue                           //搜索组件
+  |
+|			  |——detail
+  |         |——detail.vue                               //推荐详情页面
+|
+  |         |——components
+|               |
+  |             |——Banner.vue                           //Banner组件
+|               |——Header.vue                           //Header组件
+	|             |——List.vue                             //票价树型组件
+|
+  |
+|			  |——home
+  |         |——home.vue                                 //主页面
+|
+  |         |——components
+|               |
+  |             |——Header.vue                           //Header组件
+|               |——Icons.vue                            //Icon组件
+	|             |——Recommend.vue                        //推荐列表组件
+|               |——Swiper.vue                           //轮播组件
+  |             |——Weekend.vue                          //列表组件
+|
+	  |——router——                                         //路由
+|		      |——index.js
+    |
+|
+	  |——store——                                          //vuex状态管理
+|		     |——index.js
+  |      |——mutations.js
+|        |——state.js
+  |
+|
+	  |——app.vue                                           //主文件
+|
+	  |——main.js                                           //主文件入口
+|
+  |
+|——static
+  |   |——mock                                           //mock数据
+|
+  |
+|
+  |
+|——index.html	                                          //首页
+
+```
 
 ## Build Setup
 

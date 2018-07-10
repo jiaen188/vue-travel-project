@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <swiper :options="swiperOption">
+    <swiper v-if="pages.length" :options="swiperOption">
       <swiper-slide v-for="(page, index) of pages" :key="index">
         <div
           class="icon"
@@ -26,7 +26,13 @@ export default {
   data () {
     return {
       swiperOption: {
-        autoplay: false
+        loop: true,
+        // effect: 'fade',
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false
+        },
+        speed: 5000
       }
     }
   },
