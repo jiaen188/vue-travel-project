@@ -1,6 +1,6 @@
 # where-to-travel
 
-> 一个关于练习vue的demo
+> 一个关于练习vue的demo [预览](https://jiaen188.github.io/vue-travel-project/#/)
 
 &nbsp;&nbsp;覆盖大部分vue基础知识点,除了使用better-scoll实现接近原生的滚动效果，vue-awesome-swiper实现轮播效果，其他全部使用stylus自定义组件
 ps：目前由于使用本地接口，需要访问8080端口,如果想要修改，请在/config/index.js中修改proxyTable
