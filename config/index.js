@@ -61,6 +61,16 @@ module.exports = {
     // 如果前端代码是project文件夹下（project和后端代码同目录级别）,就该改成'/project'
     assetsPublicPath: './',
 
+    proxyTable: {
+      '/api': {
+        target: 'https://jiaen188.github.io/vue-travel-project/public',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': '/static/mock'
+        }
+      }
+    },
+
     /**
      * Source Maps
      */
