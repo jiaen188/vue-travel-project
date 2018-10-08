@@ -59,7 +59,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     // 打包后默认访问的路径，如果想要后端的代码是同目录不用改，、
     // 如果前端代码是project文件夹下（project和后端代码同目录级别）,就该改成'/project'
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
 
     /**
      * Source Maps
